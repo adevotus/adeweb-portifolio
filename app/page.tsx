@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import './component.css'
+import AdeWebPortfolio from "@/app/AdeWebPortfolio";
 
 export default function AdeWebHomepage() {
   const [isDark, setIsDark] = useState(false)
@@ -186,15 +187,15 @@ export default function AdeWebHomepage() {
 
               <div className="grid grid-cols-3 gap-8 py-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-indigo-600 dark:text-white project-status">5+</div>
+                  <div className="text-3xl font-bold text-indigo-600 dark:text-white project-status">4+</div>
                   <div className="text-sm dark:text-white project-status-label">Years Experience</div>
                 </div>
                 <div className="text-center"> 
-                  <div className="text-3xl font-bold text-indigo-600 dark:text-white project-status">50+</div>
+                  <div className="text-3xl font-bold text-indigo-600 dark:text-white project-status">10+</div>
                   <div className="text-sm  dark:text-white project-status-label">Satisfied Clients</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-indigo-600 dark:text-white project-status">100+</div>
+                  <div className="text-3xl font-bold text-indigo-600 dark:text-white project-status">8+</div>
                   <div className="text-sm  dark:text-white project-status-label">Projects Completed</div>
                 </div>
               </div>
@@ -500,197 +501,7 @@ export default function AdeWebHomepage() {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 project-title">Projects & Portfolios</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 project-title-label">
-              Some of the works and projects we have proudly delivered
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
-
-               {/* E-Learning Platform */}
-            <div className="group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src="/modern-e-learning-platform-interface-with-courses.jpg"
-                  alt="E-Learning Platform"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                  <button className="px-4 py-2 bg-black/60 backdrop-blur-sm text-white rounded-lg border border-white/30 hover:bg-black/70 transition-colors font-medium">
-                   <a href="https://africanhub.co.tz/">View Project</a>
-                  </button>
-                </div>
-              </div>
-              <div className="p-8">
-                <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">E-Learning Platform</h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed project-title-label"> Modern online learning platform with interactive courses, progress tracking, video streaming, and comprehensive student management.</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-sm rounded-full font-medium">
-                    Laravel
-                  </span>
-                  <span className="px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-sm rounded-full font-medium">
-                   Microservices
-                  </span>
-                  <span className="px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-sm rounded-full font-medium">
-                    2 Factor Auth
-                  </span>
-                </div>
-                <div className="flex items-center text-indigo-600 dark:text-indigo-400 font-semibold group-hover:text-indigo-700 dark:group-hover:text-indigo-300 transition-colors">
-                  <span>Learn More</span>
-                  <svg   className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Medical Pharmacy System */}
-            <div className="group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src="/medical-pharmacy-management-system-interface.jpg"
-                  alt="Medical Pharmacy System"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                  <button className="px-4 py-2 bg-black/60 backdrop-blur-sm text-white rounded-lg border border-white/30 hover:bg-black/70 transition-colors font-medium">
-                    <a href="https://pharmacy.adeweb.co.tz/">View Project</a>
-                  </button>
-                </div>
-              </div>
-              <div className="p-8">
-                <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Medical Pharmacy System</h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed project-title-label">
-                  Comprehensive pharmacy management system with inventory tracking, prescription management, and
-                  real-time analytics for healthcare providers.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm rounded-full font-medium">
-                    PHP
-                  </span>
-                  <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm rounded-full font-medium">
-                    MySQL
-                  </span>
-                  <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm rounded-full font-medium">
-                    Bootstrap
-                  </span>
-                </div>
-                <div className="flex items-center text-indigo-600 dark:text-indigo-400 font-semibold group-hover:text-indigo-700 dark:group-hover:text-indigo-300 transition-colors">
-                  <span>Learn More</span>
-                  <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"  fill="none"      stroke="currentColor"      viewBox="0 0 24 24"  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Auto Spare Parts Inventory */}
-            <div className="group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src="/automotive-spare-parts-inventory-management-dashbo.jpg"
-                  alt="Auto Spare Parts Inventory"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                  <button className="px-4 py-2 bg-black/60 backdrop-blur-sm text-white rounded-lg border border-white/30 hover:bg-black/70 transition-colors font-medium">
-                    <a href="https://hancel.adeweb.co.tz/">View Project</a>
-                  </button>
-                </div>
-              </div>
-              <div className="p-8">
-                <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Auto Spare Parts Inventory</h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed project-title-label"> Advanced inventory management system for automotive spare parts with real-time tracking, supplier management, and automated reordering.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-sm rounded-full font-medium">
-                    Laravel
-                  </span>
-                  <span className="px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-sm rounded-full font-medium">
-                    Vue.js
-                  </span>
-                  <span className="px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-sm rounded-full font-medium">
-                    MySQL
-                  </span>
-                </div>
-                <div className="flex items-center text-indigo-600 dark:text-indigo-400 font-semibold group-hover:text-indigo-700 dark:group-hover:text-indigo-300 transition-colors">
-                  <span>Learn More</span>
-                  <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-         
-
-            {/* Eco Valley Advisers */}
-            <div className="group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src="/tsa-web.png"
-                  alt="tsa"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                  <button className="px-4 py-2 bg-black/60 backdrop-blur-sm text-white rounded-lg border border-white/30 hover:bg-black/70 transition-colors font-medium">
-                    <a href="https://tsa.co.tz/">View Project</a>
-                  </button>
-                </div>
-              </div>
-              <div className="p-8">
-                <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Tanzania Startup Assosiation</h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed project-title-label">
-                  A membership-based umbrella organisation that brings together stakeholders of Tanzania's startup ecosystem to lobby, advocate and drive for frameworks that create a conducive business environment for the ecosystems to grow and scale
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-sm rounded-full font-medium">
-                    WordPress
-                  </span>
-                  <span className="px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-sm rounded-full font-medium">
-                    Custom Theme
-                  </span>
-                  <span className="px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 text-sm rounded-full font-medium">
-                    SEO
-                  </span>
-                </div>
-                <div className="flex items-center text-indigo-600 dark:text-indigo-400 font-semibold group-hover:text-indigo-700 dark:group-hover:text-indigo-300 transition-colors">
-                  <span>Learn More</span>
-                  <svg
-                    className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <button className="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              View All Projects
-            </button>
-          </div>
-        </div>
-      </section>
+     <AdeWebPortfolio/>
 
       <section className="py-20 bg-gray-50 dark:bg-gray-800 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -823,7 +634,7 @@ export default function AdeWebHomepage() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Phone</h4>
-                    <p className="text-gray-600 dark:text-gray-300">+255 123 456 789</p>
+                    <p className="text-gray-600 dark:text-gray-300">+255 653321198</p>
                   </div>
                 </div>
 
@@ -857,18 +668,12 @@ export default function AdeWebHomepage() {
               </div>
 
               <div className="flex gap-4">
-                <a
-                  href="#"
-                  className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors"
-                >
+                <a href="https://www.instagram.com/adevoweb" className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5-1.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z" />
                   </svg>
                 </a>
-                <a
-                  href="#"
-                  className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors"
-                >
+                <a href="#" className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
@@ -1011,14 +816,11 @@ export default function AdeWebHomepage() {
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => scrollToSection("portfolio")} className="hover:text-white transition-colors">
-                    Projects & Portfolios
+                  <button onClick={() => scrollToSection("portfolio")} className="hover:text-white transition-colors">Projects & Portfolios
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => scrollToSection("contact")} className="hover:text-white transition-colors">
-                    Contact
-                  </button>
+                  <button onClick={() => scrollToSection("contact")} className="hover:text-white transition-colors">Contact</button>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
